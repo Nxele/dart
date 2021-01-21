@@ -3,6 +3,7 @@ main() {
       "Sizwe", "Nxele", 34000, 26, true, "9407085624086", "Nxamalala");
   obj.display();
   obj.ListArray();
+  obj.ifElse("dart");
 }
 
 class hello {
@@ -59,5 +60,12 @@ class hello {
 
     // const requires a constant assignment, whereas final will accept both:
     const names = const ["John", "Jane", "Jack"];
+  }
+
+  // ifelse condition
+  
+  ifElse(String language){
+    var programming_language = language == "dart" ? "yes sizwe love dart as a programming language" : "Nope sizwe does not like this programming language over dart";
+    print(programming_language);
   }
 }

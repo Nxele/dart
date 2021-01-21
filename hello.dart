@@ -2,6 +2,7 @@ main() {
   hello obj = new hello(
       "Sizwe", "Nxele", 34000, 26, true, "9407085624086", "Nxamalala");
   obj.display();
+  obj.ListArray();
 }
 
 class hello {
@@ -44,5 +45,19 @@ class hello {
     gender : ${getGender()}
     ID no : $id
     address : $address''');
+  }
+
+  ListArray() {
+    // can add/remove from this list, but cannot assign a new list to fruit.
+    final fruit = ["apple", "pear", "orange"];
+    fruit.add("grape");
+    fruit.remove("pear");
+    print(fruit);
+    // cannot mutate the list or assign a new list to cars.
+    final cars = const ["Honda", "Toyota", "Ford"];
+    //cars.add("BMW"); this shoudn't work
+
+    // const requires a constant assignment, whereas final will accept both:
+    const names = const ["John", "Jane", "Jack"];
   }
 }

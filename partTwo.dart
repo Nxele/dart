@@ -1,6 +1,7 @@
 main(){
  partTwo obj = new partTwo();
  obj.looping();
+ obj.numbers();
 }
 class partTwo{
     looping(){
@@ -20,5 +21,11 @@ class partTwo{
           print("Inner Loop: ${j}");
         }
       }
+    }
+    numbers(){
+      //parsing a String to a numbers
+      String num1 = "500";
+      String num2 = "7.80"; 
+      print("$num1 = ${num.parse(num1)} and $num2 = ${num.parse(num2)}");
     }
 }

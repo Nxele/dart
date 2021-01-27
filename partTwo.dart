@@ -2,6 +2,7 @@ main(){
  partTwo obj = new partTwo();
  obj.looping();
  obj.numbers();
+ obj.strings();
 }
 class partTwo{
     looping(){
@@ -47,19 +48,45 @@ class partTwo{
       //Numbers methods
 
       var num4 = 777777.5765;
-      print(num4.ceil()); //this example rounds the number
+      print(num4.toDouble()); //this example convert this number to a double
 
       print('''
       OTHER NUMBER METHODS
-      abs
-      ceil
-      compareTo
-      Floor
-      remainder
-      Round
-      toDouble
-      toInt
-      truncate
+      abs()
+      ceil()
+      compareTo()
+      Floor()
+      remainder()
+      Round()
+      toDouble()
+      toInt()
+      truncate()
+      ''');
+    }
+    strings(){
+      //String properties
+
+      String language = "Dart";
+      print("""
+      codeUnits: ${language.codeUnits} 
+      isEmpty: ${language.isEmpty}
+      length: ${language.length}
+      """);
+
+      //Mathods to manipulate Strings
+
+      print(language.toLowerCase()); //this example convert this string to toLoweCase()
+
+      print('''
+      OTHER STRING METHODS
+      toUpperCase()
+      trim()
+      compareTo()
+      replaceAll()
+      split()
+      substring()  use startindex,endindex,exclucive
+      toString()
+      codeUnitAt()
       ''');
     }
 }

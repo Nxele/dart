@@ -27,5 +27,39 @@ class partTwo{
       String num1 = "500";
       String num2 = "7.80"; 
       print("$num1 = ${num.parse(num1)} and $num2 = ${num.parse(num2)}");
+      
+      //Numbers properties 
+      var num3 = 500;
+      print(num3.isEven); //example this return true or false result
+
+      print('''
+      OTHER USABLE NUMBER PROPERTIES
+      hashcode
+      isFinite
+      isInfinite
+      isNan
+      isNegative
+      sign
+      isEven
+      isOdd
+      ''');
+
+      //Numbers methods
+
+      var num4 = 777777.5765;
+      print(num4.ceil()); //this example rounds the number
+
+      print('''
+      OTHER NUMBER METHODS
+      abs
+      ceil
+      compareTo
+      Floor
+      remainder
+      Round
+      toDouble
+      toInt
+      truncate
+      ''');
     }
 }

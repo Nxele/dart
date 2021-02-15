@@ -1,12 +1,13 @@
-main(){
+main() {
   partThree obj = new partThree();
   obj.fixedList();
   obj.growableList();
 }
-class partThree{
-  fixedList(){
+
+class partThree {
+  fixedList() {
     //fixed lenght list
-    var list_name = new List(5);
+    List list_name = new List<String>.filled(5, "");
     list_name[0] = "Sizwe";
     list_name[1] = "Mxo";
     list_name[2] = "Mino";
@@ -16,10 +17,18 @@ class partThree{
     print(list_name);
   }
 
-  growableList(){
+  growableList() {
     //not fixed list
-    var list_cars = ["BMW","Mercedes","Porcshe","Honda"];
-    var list_girls = new List();
+    List list_cars = ["BMW", "Mercedes", "Porcshe", "Honda"];
+
+    List list_girls = [];
+    list_girls.length = 0;
+    list_girls.add("Snenhlanhla");
+    list_girls.add("Nandisa");
+    list_girls.add("Bongeka");
+
+    //print gitls names
+    print(list_girls);
 
     //adding values to the list
     list_cars.add("Jeep");
@@ -29,8 +38,7 @@ class partThree{
     list_cars.remove("Honda");
     print(list_cars);
 
-
-    //List properties 
+    //List properties
     print(list_cars.first);
 
     //Other list properties
